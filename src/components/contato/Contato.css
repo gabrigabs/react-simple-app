@@ -15,15 +15,3 @@
    margin-bottom: 0.8rem;
 }
 
-.anime-left{
-    transform: translateX(-20px);
-    opacity: 0;
-    animation: animeLeft 0.5s forwards;
-}
-
-@keyframes animeLeft{
- to{
-    transform: initial;
-    opacity: initial;
- }
-}
