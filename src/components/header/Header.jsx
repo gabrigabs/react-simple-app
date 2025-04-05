@@ -1,8 +1,18 @@
 import React from 'react'
 import './Header.css'
+import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
   return (
-    <div><h1>Header</h1></div>
+    <nav className="header">
+        <ul>
+            <li>
+                <NavLink className="link" to={"/"} end> Produtos </NavLink>
+            </li>
+            <li>
+                <NavLink className="link" to={"contato"}> Contato </NavLink>
+            </li>
+        </ul>
+    </nav>
   )
 }
