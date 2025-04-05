@@ -18,12 +18,12 @@ export const Produtos = () => {
 
   if (produtos.length === 0) return null
   return (
-    <div>
+    <div className='produtos anime-left'>
         <Head title="React | Produtos" description="Veja nossos produtos" />
         {
           produtos.map((produto) => (
-            <Link to={`produto/${produto.id}`} key={produto.id} className='produto anime-left'>
-              <h1>{produto.nome}</h1>
+            <Link to={`produto/${produto.id}`} key={produto.id}>
+              <h1 className='product-name'>{produto.nome}</h1>
               <img src={produto.fotos[0].src} alt={produto.fotos[0].titulo} />
             </Link>
           ))
